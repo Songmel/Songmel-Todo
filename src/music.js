@@ -1,7 +1,7 @@
 const musicBtn = document.querySelector(".music");
 
 let isPlaying = false;
-let audio = new Audio("../mp3/telephone_number.mp3");
+let audio = new Audio("../music/telephone_number.mp3");
 
 function playMusic() {
     if(isPlaying) {
