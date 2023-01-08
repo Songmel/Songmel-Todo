@@ -1,0 +1,17 @@
+.hidden {
+    display:none;
+}
+
+body {
+    position:relative;
+    background-image: url("../img/bg_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clock {
+    font-family: 'Monoton', cursive;
+    font-size: 10vw;
+    color: white;
+
+}

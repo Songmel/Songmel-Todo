@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--kit-->
+    <script src="https://kit.fontawesome.com/5374af606f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songmel-Todo</title>
+</head>
+<body>
+
+<!-- login page -->
+    <div class="login-splash hidden">
+        <h2>What is your name?</h2>
+        <form class="login-form">
+            <input class="login-form__input" type="text" placeholder="Write your name and press Enter" />
+            <button class="login-form__btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </form>
+    </div>
+
+<!-- main page -->
+
+    <span class="greeting"></span>
+
+    <span class="clock"></span>
+
+    <p class="quote"></p>
+
+    <form class="todo-form">
+        <span class="todo-form__title">To Do List</span>
+        <input class="todo-form__input" type="text" required placeholder="Write a To Do and Press Enter" />
+    </form>
+    <ul class="todo-list"></ul>
+
+    
+    <script src="src/login.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/quote.js"></script>
+    <script src="src/todo.js"></script>
+</body>
+</html>
