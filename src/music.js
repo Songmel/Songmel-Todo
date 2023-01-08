@@ -28,4 +28,9 @@ function playMusic() {
 
 }
 
+function isAppLoaded() {
+    console.log("ok");
+}
+
+audio.addEventListener('canplaythrough', isAppLoaded, false);
 musicBtn.addEventListener("click",playMusic);
