@@ -1,7 +1,7 @@
 const musicBtn = document.querySelector(".music");
 
 let isPlaying = false;
-let audio = new Audio("../music/telephone_number.mp3");
+let audio = new Audio("https://github.com/Songmel/Songmel-Todo/blob/gh-pages/music/telephone_number.mp3?raw=true");
 
 function playMusic() {
     if(isPlaying) {
