@@ -18,7 +18,8 @@ function loadName() {
     const userName = localStorage.getItem("userName");
     if(userName !== null) {
         loginSplash.classList.add("hidden");
-        greeting.innerText = `Hello ${userName}`; 
+        loginSplash.remove();
+        greeting.innerText = `Hello ${userName}`;
     } else {
         loginSplash.classList.remove("hidden");
     }

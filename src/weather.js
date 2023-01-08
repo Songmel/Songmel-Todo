@@ -11,7 +11,6 @@ function onGeoOk(position) {
         const name = data.name;
         const weather = data.weather[0].main;
         const temp = data.main.temp;
-        console.log(data);
         document.querySelector(".weather__location").innerText = name;
         document.querySelector(".weather__weather").innerText = weather;
         document.querySelector(".weather__temp").innerText = `${temp}°C`;
