@@ -24,5 +24,4 @@ function loadName() {
     }
 }
 
-loginBtn.addEventListener("click",gettingUserName);
 loginForm.addEventListener("submit", gettingUserName);

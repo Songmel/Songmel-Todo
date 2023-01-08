@@ -3,9 +3,14 @@
 <head>
     <!--kit-->
     <script src="https://kit.fontawesome.com/5374af606f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--
+        font-family: 'Lobster', cursive;
+        font-family: 'Monoton', cursive;
+        font-family: 'Open Sans', sans-serif;
+    -->
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,11 +22,10 @@
 <body>
 
 <!-- login page -->
-    <div class="login-splash hidden">
+    <div class="login-splash">
         <h2>What is your name?</h2>
         <form class="login-form">
             <input class="login-form__input" type="text" placeholder="Write your name and press Enter" />
-            <button class="login-form__btn"><i class="fa-solid fa-chevron-right"></i></button>
         </form>
     </div>
 
@@ -34,15 +38,22 @@
     <p class="quote"></p>
 
     <form class="todo-form">
-        <span class="todo-form__title">To Do List</span>
-        <input class="todo-form__input" type="text" required placeholder="Write a To Do and Press Enter" />
+        <input class="todo-form__input" type="text" required placeholder="What is your focus now?" />
     </form>
     <ul class="todo-list"></ul>
 
-    
+    <div class="weather-wrapper">
+        <span class="weather__location"></span>
+        <span class="weather__weather"></span>
+        <span class="weather__temp"></span>
+    </div>
+
+<!-- script -->
+
     <script src="src/login.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/quote.js"></script>
     <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
 </body>
 </html>

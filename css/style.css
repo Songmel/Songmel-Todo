@@ -1,17 +1,125 @@
-.hidden {
-    display:none;
+:root {
+    --clock-left-margin: 17%;
+}
+
+* {
+    margin:0;
+    padding:0;
 }
 
 body {
+    width:100vw;
+    height:56.25vw;
     position:relative;
     background-image: url("../img/bg_img.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    font-family: 'Lobster', cursive;
+    color:white;
+}
+
+.greeting {
+    position:absolute;
+    left:var(--clock-left-margin);
+    top:9%;
+    font-size: 3vw;
 }
 
 .clock {
+    position:absolute;
+    left:var(--clock-left-margin);
+    top:11%;
     font-family: 'Monoton', cursive;
-    font-size: 10vw;
-    color: white;
+    font-size: 11vw;
+}
 
+.quote {
+    position:absolute;
+    bottom:1%;
+    right:37%;
+    color:black;
+    font-size:1.2vw;
+}
+
+.todo-form {
+    position:absolute;
+    left:31%;
+    top:37%;
+
+    display:flex;
+    flex-direction: column;
+}
+
+input {
+    width: 30vw;
+    border:none;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    background: none;
+    font-size: 2vw;
+    color: white;
+}
+
+input:focus {
+    outline-style:none;
+}
+
+input::placeholder {
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.todo-list {
+    position:absolute;
+    left: 73.5%;
+    top: 33%;
+
+
+    font-size: 1.4vw;
+    list-style-type: none;
+}
+
+.todo-list li button {
+    margin-right:0.5vw;
+    width: 1.3vw;
+    height: 1.3vw;
+    background: none;
+    border: 2px solid white;
+}
+
+.weather-wrapper {
+    position:absolute;
+    top:1%;
+    left:1%;
+    
+}
+
+/* login splash */
+.login-splash {
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    left:0;
+    top:0;
+    z-index:100;
+
+    background-color: rgba(0,0,0,0.8);
+}
+
+.login-splash h2 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+}
+
+
+/* always bottom */
+.hidden {
+    display:none;
 }
